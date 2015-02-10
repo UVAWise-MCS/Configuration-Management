@@ -1,0 +1,2 @@
+#Ignores temp files that word creates
+~$*.*
