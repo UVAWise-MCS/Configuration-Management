@@ -74,4 +74,10 @@ The documentation to be included is:
  8. Revision Control Software History Log
 
 ##Assessments
-  Each team member will perform a self-assessment of how they did on the project and a peer assessment of how each of their team members performed. Items to include in the assessments are: * Responsibilities * Strengths * Weaknesses * Recommended Score (0-100) Each person will turn in their assessments separately from the documentation listed previously. Give specific examples and write at least 2 paragraphs for each item (responsibilities, strengths, weaknesses). 
+Each team member will perform a self-assessment of how they did on the project and a peer assessment of how each of their team members performed. Items to include in the assessments are:
+ * Responsibilities
+ * Strengths
+ * Weaknesses
+ * Recommended Score (0-100)
+ 
+Each person will turn in their assessments separately from the documentation listed previously. Give specific examples and write at least 2 paragraphs for each item (responsibilities, strengths, weaknesses). 
