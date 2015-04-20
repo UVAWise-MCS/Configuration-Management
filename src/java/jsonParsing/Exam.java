@@ -1,4 +1,4 @@
-package JSONParsing;
+package jsonParsing;
 
 public class Exam {
 

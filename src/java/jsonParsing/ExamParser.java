@@ -2,7 +2,7 @@
  * 
  */
 
-package JSONParsing;
+package jsonParsing;
 
 import org.json.*;
 
