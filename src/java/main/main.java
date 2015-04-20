@@ -5,6 +5,8 @@
 * DO NOT MODIFY SUPER IMPORTANT
 */
 
+package main;
+
 import java.io.*;
 
 public class main{
