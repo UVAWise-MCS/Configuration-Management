@@ -1,8 +1,5 @@
-/**
- * 
- */
-
 package jsonParsing;
+
 
 import org.json.*;
 
@@ -41,7 +38,7 @@ public class ExamParser {
 		return null; //TODO Implement
 		
 	}
-
+	
 	private BaseQuestion parseQuestions(JSONObject obj) {
 		return null; //TODO Implement	
 	}
