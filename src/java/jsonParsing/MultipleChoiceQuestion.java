@@ -8,17 +8,18 @@ public class MultipleChoiceQuestion extends BaseQuestion
 	public MultipleChoiceQuestion()					//Default constructor.
 	{
 		super();
+		type = 0;
 	}
 	
-	public MultipleChoiceQuestion(String txt, int typ, String cat) 		//Overloaded constructor
+	public MultipleChoiceQuestion(String txt, String cat) 		//Overloaded constructor
 	{
-		super(txt, typ,cat);
+		super(txt, 0, cat);
 		
 	}
 	
-	public MultipleChoiceQuestion(String txt, int typ, ArrayList<Answer> ans, String cat)
+	public MultipleChoiceQuestion(String txt, ArrayList<Answer> ans, String cat)
 	{
-		super(txt, typ,ans,cat);					//Overloaded constructor
+		super(txt, 0, ans, cat);					//Overloaded constructor
 		
 	}
 	

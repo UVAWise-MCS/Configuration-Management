@@ -12,11 +12,12 @@ public class MatchingQuestion extends BaseQuestion
 	public MatchingQuestion()				//Default constructor.
 	{
 		super();
+		type = 2;
 	}
 	
-	public MatchingQuestion (String question,int typ, String cat) 		//Overloaded constructor
+	public MatchingQuestion (String question, String cat) 		//Overloaded constructor
 	{
-		super(question, typ, cat);
+		super(question, 2, cat);
 	}
 	
 	public void addMatchingItem(String item){

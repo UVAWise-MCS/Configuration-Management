@@ -6,11 +6,12 @@ public class ShortAnswerQuestion extends BaseQuestion
 	public ShortAnswerQuestion()			//Default constructor
 	{
 		super();
+		type = 3;
 	}
 	
-	public ShortAnswerQuestion (String question,int typ, String cat ) 		//Overloaded constructor
+	public ShortAnswerQuestion (String question, String cat ) 		//Overloaded constructor
 	{
-		super(question, typ, cat);
+		super(question, 3, cat);
 	}
 	
 		

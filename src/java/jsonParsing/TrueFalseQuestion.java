@@ -5,12 +5,13 @@ public class TrueFalseQuestion extends BaseQuestion
 
 	public TrueFalseQuestion()				//Default constructor
 	{
-		super(); 
+		super();
+		type = 1;
 	}
 	
-	public TrueFalseQuestion (String question,int typ, String cat ) 	//Overloaded constructor
+	public TrueFalseQuestion (String question, String cat ) 	//Overloaded constructor
 	{
-		super(question, typ, cat);
+		super(question, 1, cat);
 	}
 	
 	

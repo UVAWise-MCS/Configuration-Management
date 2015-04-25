@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public abstract class BaseQuestion 
 {
-	protected  String text;
+	protected String text;
 	protected int type;
 	protected String category; 
 	protected ArrayList<Answer> answers = new ArrayList<Answer>();
@@ -57,6 +57,11 @@ public abstract class BaseQuestion
 	protected void setCategory(String Category)
 	{
 		category = Category;
+	}
+	
+	protected void addAnswers(Answer ans)
+	{
+		answers.add(ans);
 	}
 	
 	protected void addAnswers(String text, int val)
