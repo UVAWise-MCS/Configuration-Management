@@ -38,8 +38,8 @@ public class MatchingQuestion extends BaseQuestion
 		StringBuilder result = new StringBuilder();
 	    String NEW_LINE = System.getProperty("line.separator");
 	    result.append("Matching Question :" + this.getCategory() + NEW_LINE);
-	    for (int i = 0; i<= matchingItems.size(); i++) {
-	    	result.append((i+1)+") " + matchingItems.get(i)+"\t"+ch+") "+answers.get(i).getText()+ NEW_LINE);
+	    for (int i = 0; i< matchingItems.size(); i++) {
+	    	result.append((i+1)+") " + matchingItems.get(i)+"\t"+ch+") "+answers.get(i)+ NEW_LINE);
 	    	ch++;
 	    }
 	    

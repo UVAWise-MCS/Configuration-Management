@@ -27,9 +27,9 @@ public class TrueFalseQuestion extends BaseQuestion
 		StringBuilder result = new StringBuilder();
 	    String NEW_LINE = System.getProperty("line.separator");
 	    result.append("True/False Question : "+ this.getCategory() + NEW_LINE);
-	    result.append(this.getText() + " ?" + NEW_LINE);
-	    result.append("A) True " +  NEW_LINE);
-	    result.append("B) False " + NEW_LINE);
+	    result.append(this.getText() + NEW_LINE);
+	    result.append("A) True" +  NEW_LINE);
+	    result.append("B) False" + NEW_LINE);
 	    return result.toString();
 	  }
 	

@@ -36,9 +36,9 @@ public class MultipleChoiceQuestion extends BaseQuestion
 		StringBuilder result = new StringBuilder();
 	    String NEW_LINE = System.getProperty("line.separator");
 	    result.append("Mulitple Choice Question :" + this.getCategory() + NEW_LINE);
-	    result.append(this.getText() + " ?" + NEW_LINE);
+	    result.append(this.getText() + NEW_LINE);
 	    for(Answer a: answers){
-	    	result.append(ch+") " + a.getText() + NEW_LINE);
+	    	result.append(ch+") " + a + NEW_LINE);
 	    	ch++;
 	    }
 	    return result.toString();
