@@ -22,14 +22,14 @@ public class Answer
 		return text;
 	}
 	
-	public void setText(String txt)			//Utility function
-	{
-		text = txt;
-	}
-	
 	public int getValue()					//Utility function
 	{
 		return value;
+	}
+	
+	public void setText(String txt)			//Utility function
+	{
+		text = txt;
 	}
 	
 	public void setValue(int Value)			//Utility function

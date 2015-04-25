@@ -1,7 +1,6 @@
 package jsonParsing;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Exam is a class to provide a data structure that represents an exam as a whole.
@@ -34,19 +33,16 @@ public class Exam {
 	}
 
 	
+	public void addQuestion(BaseQuestion q){
+		getQuestions().add(q);
+	}
+
+	
 	/**
 	 * @return the name
 	 */
 	public String getName() {
 		return name;
-	}
-
-	
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	
@@ -59,22 +55,25 @@ public class Exam {
 
 	
 	/**
-	 * @param questions2 the questions to set
-	 */
-	public void setQuestions(ArrayList<BaseQuestion> questions) {
-		this.questions = questions;
-	}
-
-	
-	/**
 	 * @return the totalQuestions
 	 */
 	public int getTotalQuestions() {
 		return getQuestions().size();
 	}
+
 	
-	public void addQuestion(BaseQuestion q){
-		getQuestions().add(q);
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	/**
+	 * @param questions2 the questions to set
+	 */
+	public void setQuestions(ArrayList<BaseQuestion> questions) {
+		this.questions = questions;
 	}	
 	
 	

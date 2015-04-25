@@ -12,17 +12,17 @@ public class MultipleChoiceQuestion extends BaseQuestion
 		heading = "Mulitple Choice Question :";
 	}
 	
-	public MultipleChoiceQuestion(String txt, String cat) 		//Overloaded constructor
-	{
-		super(txt, 0, cat);
-		heading = "Mulitple Choice Question :" + this.getCategory();
-		
-	}
-	
 	public MultipleChoiceQuestion(String txt, ArrayList<Answer> ans, String cat)
 	{
 		this(txt, cat);
 		setAnswers(ans);
+		
+	}
+	
+	public MultipleChoiceQuestion(String txt, String cat) 		//Overloaded constructor
+	{
+		super(txt, 0, cat);
+		heading = "Mulitple Choice Question :" + this.getCategory();
 		
 	}
 	

@@ -3,8 +3,9 @@
  */
 package tests;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 import jsonParsing.Answer;
+
 import org.junit.Test;
 
 

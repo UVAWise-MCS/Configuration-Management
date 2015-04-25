@@ -12,7 +12,6 @@ package CommandLine;
 *
 ******************************************/
 
-import java.io.*;
 
 public class cmd{
 	public static void main (String[] args){

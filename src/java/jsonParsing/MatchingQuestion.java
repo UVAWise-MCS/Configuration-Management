@@ -22,16 +22,16 @@ public class MatchingQuestion extends BaseQuestion
 		heading = "Matching Question :" + this.getCategory();
 	}
 	
+	public void addMatchingItem(String item){
+		matchingItems.add(item);
+	}
+
 	public ArrayList<String> getMatchingItems() {
 		return matchingItems;
 	}
 
 	public void setMatchingItems(ArrayList<String> matchingItems) {
 		this.matchingItems = matchingItems;
-	}
-
-	public void addMatchingItem(String item){
-		matchingItems.add(item);
 	}
 	
 	

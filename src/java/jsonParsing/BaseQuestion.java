@@ -12,65 +12,19 @@ public abstract class BaseQuestion
 	
 	public BaseQuestion(){}
 	
+	public BaseQuestion(String txt, int typ, ArrayList<Answer> ans, String cat)
+	{
+		this(txt, typ, cat);
+		answers = ans;			
+	}
+	
 	public BaseQuestion (String txt, int typ, String cat)
 	{
 		text = txt;
 		type = typ;
 		category = cat;
 	}
-	
-	public BaseQuestion(String txt, int typ, ArrayList<Answer> ans, String cat)
-	{
-		this(txt, typ, cat);
-		answers = ans;			
-	}
 		
-	public String getText() 
-	{
-		return text;
-	}
-	
-	protected void setText(String Text)
-	{
-		text = Text;
-	}
-	
-	public int getType()
-	{
-		return type;
-	}
-	
-	protected  void setType(int Type)
-	{
-		type = Type;
-	}
-	
-	public String getCategory()
-	{
-		return category;
-	}
-	
-	protected void setCategory(String Category)
-	{
-		category = Category;
-	}
-	
-	public String getHeading() {
-		return heading;
-	}
-
-	public void setHeading(String heading) {
-		this.heading = heading;
-	}
-
-	public ArrayList<Answer> getAnswers() {
-		return answers;
-	}
-
-	public void setAnswers(ArrayList<Answer> answers) {
-		this.answers = answers;
-	}
-
 	public void addAnswer(Answer ans)
 	{
 		answers.add(ans);
@@ -83,7 +37,54 @@ public abstract class BaseQuestion
 		ans.setValue(val);
 		answers.add(ans);
 	}
+	
+	public ArrayList<Answer> getAnswers() {
+		return answers;
+	}
+	
+	public String getCategory()
+	{
+		return category;
+	}
+	
+	public String getHeading() {
+		return heading;
+	}
+	
+	public String getText() 
+	{
+		return text;
+	}
+	
+	public int getType()
+	{
+		return type;
+	}
+
+	public void setAnswers(ArrayList<Answer> answers) {
+		this.answers = answers;
+	}
+
+	protected void setCategory(String Category)
+	{
+		category = Category;
+	}
+
+	public void setHeading(String heading) {
+		this.heading = heading;
+	}
+
+	protected void setText(String Text)
+	{
+		text = Text;
+	}
+	
+	protected  void setType(int Type)
+	{
+		type = Type;
+	}
 		
+	@Override
 	public abstract String toString();
 	
 }

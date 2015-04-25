@@ -3,7 +3,7 @@
  */
 package tests;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
 import org.junit.After;
 import org.junit.AfterClass;

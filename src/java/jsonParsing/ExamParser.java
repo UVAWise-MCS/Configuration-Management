@@ -1,7 +1,8 @@
 package jsonParsing;
 
 
-import org.json.*;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * ExamParser is a class that uses the org.json library to parse JSON files
@@ -39,11 +40,11 @@ public class ExamParser {
 		
 	}
 	
-	private BaseQuestion parseQuestions(JSONObject obj) {
-		return null; //TODO Implement	
-	}
-	
 	private Answer parseAnswers(JSONObject obj) {
 		return null; //TODO Implement
+	}
+	
+	private BaseQuestion parseQuestions(JSONObject obj) {
+		return null; //TODO Implement	
 	}
 }
