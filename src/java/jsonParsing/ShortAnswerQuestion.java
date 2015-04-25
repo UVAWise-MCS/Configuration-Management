@@ -7,14 +7,14 @@ public class ShortAnswerQuestion extends BaseQuestion
 	{
 		super();
 		type = 3;
+		heading = "Short Answer : ";
 	}
 	
 	public ShortAnswerQuestion (String question, String cat ) 		//Overloaded constructor
 	{
 		super(question, 3, cat);
+		heading = "Short Answer : " +this.getCategory();
 	}
-	
-		
 	
 	//ToString method to display a short question as follows : 
 	//Short Question : category
@@ -22,10 +22,9 @@ public class ShortAnswerQuestion extends BaseQuestion
 	//*********************************************
 	@Override
 	public String toString() {
-		
 		StringBuilder result = new StringBuilder();
 	    String NEW_LINE = System.getProperty("line.separator");
-	    result.append("Short Answer : " +this.getCategory()+ NEW_LINE);
+	    result.append(heading + NEW_LINE);
 	    result.append(this.getText() + NEW_LINE);
 	    return result.toString();
 	  }

@@ -1,39 +1,26 @@
 package jsonParsing;
 
-public class TrueFalseQuestion extends BaseQuestion
+public class TrueFalseQuestion extends MultipleChoiceQuestion
 {
 
 	public TrueFalseQuestion()				//Default constructor
 	{
 		super();
 		type = 1;
+		setupTrueFalse();
 	}
 	
 	public TrueFalseQuestion (String question, String cat ) 	//Overloaded constructor
 	{
-		super(question, 1, cat);
+		super(question, cat);
+		type = 1;
+		setupTrueFalse();
 	}
 	
-	
-	//ToString method to display a True / False question as follows : 
-	//True/False Question : category
-	//Question?
-	//A) True
-	//B) False
-	//***************************************************************
-	@Override
-	public String toString() {
-		
-		StringBuilder result = new StringBuilder();
-	    String NEW_LINE = System.getProperty("line.separator");
-	    result.append("True/False Question : "+ this.getCategory() + NEW_LINE);
-	    result.append(this.getText() + NEW_LINE);
-	    result.append("A) True" +  NEW_LINE);
-	    result.append("B) False" + NEW_LINE);
-	    return result.toString();
-	  }
-	
-	
-	
+	private void setupTrueFalse() {
+		heading = "True/False Question : " +this.getCategory();
+		addAnswer("True", 0);
+		addAnswer("False", 0);
+	}
 	
 }

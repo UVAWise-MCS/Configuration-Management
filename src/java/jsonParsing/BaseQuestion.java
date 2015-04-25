@@ -6,13 +6,11 @@ public abstract class BaseQuestion
 {
 	protected String text;
 	protected int type;
-	protected String category; 
+	protected String category;
+	protected String heading;
 	protected ArrayList<Answer> answers = new ArrayList<Answer>();
 	
-	public BaseQuestion()
-	{
-		
-	}
+	public BaseQuestion(){}
 	
 	public BaseQuestion (String txt, int typ, String cat)
 	{
@@ -23,9 +21,7 @@ public abstract class BaseQuestion
 	
 	public BaseQuestion(String txt, int typ, ArrayList<Answer> ans, String cat)
 	{
-		text = txt; 
-		type = typ;
-		category = cat;
+		this(txt, typ, cat);
 		answers = ans;			
 	}
 		
@@ -59,6 +55,14 @@ public abstract class BaseQuestion
 		category = Category;
 	}
 	
+	public String getHeading() {
+		return heading;
+	}
+
+	public void setHeading(String heading) {
+		this.heading = heading;
+	}
+
 	public ArrayList<Answer> getAnswers() {
 		return answers;
 	}

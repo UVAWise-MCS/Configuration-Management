@@ -13,11 +13,13 @@ public class MatchingQuestion extends BaseQuestion
 	{
 		super();
 		type = 2;
+		heading = "Matching Question :";
 	}
 	
 	public MatchingQuestion (String question, String cat) 		//Overloaded constructor
 	{
 		super(question, 2, cat);
+		heading = "Matching Question :" + this.getCategory();
 	}
 	
 	public ArrayList<String> getMatchingItems() {
@@ -45,7 +47,7 @@ public class MatchingQuestion extends BaseQuestion
 		char ch = 'A';
 		StringBuilder result = new StringBuilder();
 	    String NEW_LINE = System.getProperty("line.separator");
-	    result.append("Matching Question :" + this.getCategory() + NEW_LINE);
+	    result.append(heading + NEW_LINE);
 	    for (int i = 0; i< matchingItems.size(); i++) {
 	    	result.append((i+1)+") " + matchingItems.get(i)+"\t"+ch+") "+answers.get(i)+ NEW_LINE);
 	    	ch++;

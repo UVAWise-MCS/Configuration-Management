@@ -9,17 +9,20 @@ public class MultipleChoiceQuestion extends BaseQuestion
 	{
 		super();
 		type = 0;
+		heading = "Mulitple Choice Question :";
 	}
 	
 	public MultipleChoiceQuestion(String txt, String cat) 		//Overloaded constructor
 	{
 		super(txt, 0, cat);
+		heading = "Mulitple Choice Question :" + this.getCategory();
 		
 	}
 	
 	public MultipleChoiceQuestion(String txt, ArrayList<Answer> ans, String cat)
 	{
-		super(txt, 0, ans, cat);					//Overloaded constructor
+		this(txt, cat);
+		setAnswers(ans);
 		
 	}
 	
@@ -35,7 +38,7 @@ public class MultipleChoiceQuestion extends BaseQuestion
 		char ch = 'A';
 		StringBuilder result = new StringBuilder();
 	    String NEW_LINE = System.getProperty("line.separator");
-	    result.append("Mulitple Choice Question :" + this.getCategory() + NEW_LINE);
+	    result.append(heading + NEW_LINE);
 	    result.append(this.getText() + NEW_LINE);
 	    for(Answer a: answers){
 	    	result.append(ch+") " + a + NEW_LINE);
