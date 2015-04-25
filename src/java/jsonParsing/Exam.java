@@ -18,9 +18,7 @@ public class Exam {
 	//TODO Create a higher level class that contains all the questions and answers.
 	
 	String name = "Exam";
-	ArrayList<BaseQuestion> questions = new ArrayList<BaseQuestion>();
-	int totalQuestions = 0;
-	
+	ArrayList<BaseQuestion> questions = new ArrayList<BaseQuestion>();	
 	
 	public Exam(){}
 	
@@ -72,21 +70,12 @@ public class Exam {
 	 * @return the totalQuestions
 	 */
 	public int getTotalQuestions() {
-		return totalQuestions;
+		return getQuestions().size();
 	}
 	
 	public void addQuestion(BaseQuestion q){
 		getQuestions().add(q);
-	}
-
-	
-	/**
-	 * @param totalQuestions the totalQuestions to set
-	 */
-	public void setTotalQuestions(int totalQuestions) {
-		this.totalQuestions = totalQuestions;
-	}
-	
+	}	
 	
 	
 }
