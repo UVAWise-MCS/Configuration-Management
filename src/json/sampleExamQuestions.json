@@ -1,0 +1,50 @@
+{
+   "name":"Exam",
+   "questions":[
+      {
+         "text":"What is SWEG?",
+         "category":"SWEG",
+         "answers":[
+            "Comp Sci",
+            "Software Engineering",
+            "Derp",
+            "Herp"
+         ],
+         "type":0
+      },
+      {
+         "text":"Match each capital with its country",
+         "category":"Geography",
+         "matchingItems":[
+            "Paris",
+            "Milan",
+            "London",
+            "Berlin"
+         ],
+         "answers":[
+            "England",
+            "France",
+            "Germany",
+            "Italy"
+         ],
+         "type":2
+      },
+      {
+         "text":"Is it Raining?",
+         "category":"Weather",
+         "answers":[
+            "True",
+            "False"
+         ],
+         "type":1
+      },
+      {
+         "text":"Are you awake?",
+         "category":"General",
+         "answers":[
+
+         ],
+         "type":3
+      }
+   ]
+}
