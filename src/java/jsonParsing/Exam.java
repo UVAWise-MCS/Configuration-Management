@@ -1,5 +1,6 @@
 package jsonParsing;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -17,7 +18,7 @@ public class Exam {
 	//TODO Create a higher level class that contains all the questions and answers.
 	
 	String name = "Exam";
-	BaseQuestion[] questions;
+	ArrayList<BaseQuestion> questions = new ArrayList<BaseQuestion>();
 	int totalQuestions = 0;
 	
 	
@@ -29,7 +30,7 @@ public class Exam {
 	}
 	
 	
-	public Exam(String name, BaseQuestion[] questions){
+	public Exam(String name, ArrayList<BaseQuestion> questions){
 		this(name);
 		setQuestions(questions);
 	}
@@ -54,15 +55,15 @@ public class Exam {
 	/**
 	 * @return the questions
 	 */
-	public BaseQuestion[] getQuestions() {
+	public ArrayList<BaseQuestion> getQuestions() {
 		return questions;
 	}
 
 	
 	/**
-	 * @param questions the questions to set
+	 * @param questions2 the questions to set
 	 */
-	public void setQuestions(BaseQuestion[] questions) {
+	public void setQuestions(ArrayList<BaseQuestion> questions) {
 		this.questions = questions;
 	}
 
@@ -73,6 +74,10 @@ public class Exam {
 	public int getTotalQuestions() {
 		return totalQuestions;
 	}
+	
+	public void addQuestion(BaseQuestion q){
+		getQuestions().add(q);
+	}
 
 	
 	/**
@@ -80,17 +85,6 @@ public class Exam {
 	 */
 	public void setTotalQuestions(int totalQuestions) {
 		this.totalQuestions = totalQuestions;
-	}
-
-	
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		return "Exam [name=" + name + ", questions="
-				+ Arrays.toString(questions) + ", totalQuestions="
-				+ totalQuestions + "]"; //TODO: Temp
 	}
 	
 	
