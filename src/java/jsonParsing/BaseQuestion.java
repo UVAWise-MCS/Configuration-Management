@@ -9,19 +9,19 @@ public abstract class BaseQuestion
 	protected String category; 
 	protected ArrayList<Answer> answers = new ArrayList<Answer>();
 	
-	protected BaseQuestion()
+	public BaseQuestion()
 	{
 		
 	}
 	
-	protected BaseQuestion (String txt, int typ, String cat)
+	public BaseQuestion (String txt, int typ, String cat)
 	{
 		text = txt;
 		type = typ;
 		category = cat;
 	}
 	
-	protected BaseQuestion(String txt, int typ, ArrayList<Answer> ans, String cat)
+	public BaseQuestion(String txt, int typ, ArrayList<Answer> ans, String cat)
 	{
 		text = txt; 
 		type = typ;
@@ -29,7 +29,7 @@ public abstract class BaseQuestion
 		answers = ans;			
 	}
 		
-	protected String getText() 
+	public String getText() 
 	{
 		return text;
 	}
@@ -39,7 +39,7 @@ public abstract class BaseQuestion
 		text = Text;
 	}
 	
-	protected int getType()
+	public int getType()
 	{
 		return type;
 	}
@@ -49,7 +49,7 @@ public abstract class BaseQuestion
 		type = Type;
 	}
 	
-	protected String getCategory()
+	public String getCategory()
 	{
 		return category;
 	}
