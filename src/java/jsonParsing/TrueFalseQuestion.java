@@ -19,8 +19,8 @@ public class TrueFalseQuestion extends MultipleChoiceQuestion
 	
 	private void setupTrueFalse() {
 		heading = "True/False Question : " +this.getCategory();
-		addAnswer("True", 0);
-		addAnswer("False", 0);
+		addAnswer("True");
+		addAnswer("False");
 	}
 	
 }

@@ -40,11 +40,4 @@ public class ExamParser {
 		
 	}
 	
-	private Answer parseAnswers(JSONObject obj) {
-		return null; //TODO Implement
-	}
-	
-	private BaseQuestion parseQuestions(JSONObject obj) {
-		return null; //TODO Implement	
-	}
 }

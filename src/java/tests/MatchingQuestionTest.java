@@ -21,10 +21,10 @@ public class MatchingQuestionTest {
 		q.addMatchingItem("Milan");		
 		q.addMatchingItem("London");		
 		q.addMatchingItem("Berlin");
-		q.addAnswer("England", 1);	//defines the answers.
-		q.addAnswer("France", 2);
-		q.addAnswer("Germany", 3);
-		q.addAnswer("Italy", 4);
+		q.addAnswer("England");	//defines the answers.
+		q.addAnswer("France");
+		q.addAnswer("Germany");
+		q.addAnswer("Italy");
 		System.out.println("Output:\n");
 		System.out.println(q.toString());
 		System.out.println("\nExpected Output:\n");

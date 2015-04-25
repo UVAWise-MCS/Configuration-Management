@@ -8,11 +8,11 @@ public abstract class BaseQuestion
 	protected int type;
 	protected String category;
 	protected String heading;
-	protected ArrayList<Answer> answers = new ArrayList<Answer>();
+	protected ArrayList<String> answers = new ArrayList<String>();
 	
 	public BaseQuestion(){}
 	
-	public BaseQuestion(String txt, int typ, ArrayList<Answer> ans, String cat)
+	public BaseQuestion(String txt, int typ, ArrayList<String> ans, String cat)
 	{
 		this(txt, typ, cat);
 		answers = ans;			
@@ -24,21 +24,13 @@ public abstract class BaseQuestion
 		type = typ;
 		category = cat;
 	}
-		
-	public void addAnswer(Answer ans)
+			
+	public void addAnswer(String text)
 	{
-		answers.add(ans);
+		answers.add(text);
 	}
 	
-	public void addAnswer(String text, int val)
-	{
-		Answer ans = new Answer();
-		ans.setText(text);
-		ans.setValue(val);
-		answers.add(ans);
-	}
-	
-	public ArrayList<Answer> getAnswers() {
+	public ArrayList<String> getAnswers() {
 		return answers;
 	}
 	
@@ -47,7 +39,7 @@ public abstract class BaseQuestion
 		return category;
 	}
 	
-	public String getHeading() {
+	protected String getHeading() {
 		return heading;
 	}
 	
@@ -61,7 +53,7 @@ public abstract class BaseQuestion
 		return type;
 	}
 
-	public void setAnswers(ArrayList<Answer> answers) {
+	public void setAnswers(ArrayList<String> answers) {
 		this.answers = answers;
 	}
 
@@ -70,7 +62,7 @@ public abstract class BaseQuestion
 		category = Category;
 	}
 
-	public void setHeading(String heading) {
+	protected void setHeading(String heading) {
 		this.heading = heading;
 	}
 

@@ -21,10 +21,10 @@ public class MultipleChoiceQuestionTest {
 	@Test
 	public void test() {
 		MultipleChoiceQuestion q = new MultipleChoiceQuestion("How are you?", "General");
-		q.addAnswer("Well", 5);	
-		q.addAnswer("Very well", 6);
-		q.addAnswer("Not well", 7);
-		q.addAnswer("Not very well", 8);
+		q.addAnswer("Well");	
+		q.addAnswer("Very well");
+		q.addAnswer("Not well");
+		q.addAnswer("Not very well");
 		System.out.println("Output:\n");
 		System.out.println(q.toString());
 		System.out.println("\nExpected Output:\n");

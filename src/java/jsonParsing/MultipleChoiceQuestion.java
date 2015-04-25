@@ -12,7 +12,7 @@ public class MultipleChoiceQuestion extends BaseQuestion
 		heading = "Mulitple Choice Question :";
 	}
 	
-	public MultipleChoiceQuestion(String txt, ArrayList<Answer> ans, String cat)
+	public MultipleChoiceQuestion(String txt, ArrayList<String> ans, String cat)
 	{
 		this(txt, cat);
 		setAnswers(ans);
@@ -40,7 +40,7 @@ public class MultipleChoiceQuestion extends BaseQuestion
 	    String NEW_LINE = System.getProperty("line.separator");
 	    result.append(heading + NEW_LINE);
 	    result.append(this.getText() + NEW_LINE);
-	    for(Answer a: answers){
+	    for(String a: answers){
 	    	result.append(ch+") " + a + NEW_LINE);
 	    	ch++;
 	    }
