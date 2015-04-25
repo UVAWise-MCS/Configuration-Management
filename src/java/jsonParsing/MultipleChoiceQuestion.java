@@ -1,5 +1,7 @@
 package jsonParsing;
 
+import java.util.ArrayList;
+
 public class MultipleChoiceQuestion extends BaseQuestion 
 { 
 	
@@ -14,7 +16,7 @@ public class MultipleChoiceQuestion extends BaseQuestion
 		
 	}
 	
-	public MultipleChoiceQuestion(String txt, int typ,Answer[] ans, String cat) 
+	public MultipleChoiceQuestion(String txt, int typ, ArrayList<Answer> ans, String cat)
 	{
 		super(txt, typ,ans,cat);					//Overloaded constructor
 		
@@ -34,7 +36,7 @@ public class MultipleChoiceQuestion extends BaseQuestion
 	    String NEW_LINE = System.getProperty("line.separator");
 	    result.append("Mulitple Choice Question :" + this.getCategory() + NEW_LINE);
 	    result.append(this.getText() + " ?" + NEW_LINE);
-	    for(Answer a: Answers){
+	    for(Answer a: answers){
 	    	result.append(ch+") " + a.getText() + NEW_LINE);
 	    	ch++;
 	    }

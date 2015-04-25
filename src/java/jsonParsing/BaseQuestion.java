@@ -1,11 +1,13 @@
 package jsonParsing;
 
+import java.util.ArrayList;
+
 public abstract class BaseQuestion 
 {
 	protected  String text;
 	protected int type;
 	protected String category; 
-	protected Answer[] Answers = new Answer[4];
+	protected ArrayList<Answer> answers = new ArrayList<Answer>();
 	
 	protected BaseQuestion()
 	{
@@ -19,12 +21,12 @@ public abstract class BaseQuestion
 		category = cat;
 	}
 	
-	protected BaseQuestion(String txt, int typ,Answer[] ans, String cat)
+	protected BaseQuestion(String txt, int typ, ArrayList<Answer> ans, String cat)
 	{
 		text = txt; 
 		type = typ;
 		category = cat;
-		Answers = ans;			
+		answers = ans;			
 	}
 		
 	protected String getText() 
@@ -57,12 +59,12 @@ public abstract class BaseQuestion
 		category = Category;
 	}
 	
-	protected Answer addAnswers(String Text, int Val)
+	protected void addAnswers(String text, int val)
 	{
-		Answer Ans = new Answer();
-		Ans.setText(Text);
-		Ans.setValue(Val);
-		return Ans;
+		Answer ans = new Answer();
+		ans.setText(text);
+		ans.setValue(val);
+		answers.add(ans);
 	}
 		
 	public String toString() 

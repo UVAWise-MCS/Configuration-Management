@@ -1,10 +1,12 @@
 package jsonParsing;
 
+import java.util.ArrayList;
+
 public class MatchingQuestion extends BaseQuestion
 {
 	//Using the Question class an array of questions is added as a private member variable 
 	//of the Matching questions class.
-	protected String Questions[];
+	protected ArrayList<String> matchingItems = new ArrayList<String>();
 
 	
 	public MatchingQuestion()				//Default constructor.
@@ -15,6 +17,10 @@ public class MatchingQuestion extends BaseQuestion
 	public MatchingQuestion (String question,int typ, String cat) 		//Overloaded constructor
 	{
 		super(question, typ, cat);
+	}
+	
+	public void addMatchingItem(String item){
+		matchingItems.add(item);
 	}
 	
 	
@@ -31,8 +37,8 @@ public class MatchingQuestion extends BaseQuestion
 		StringBuilder result = new StringBuilder();
 	    String NEW_LINE = System.getProperty("line.separator");
 	    result.append("Matching Question :" + this.getCategory() + NEW_LINE);
-	    for (int i = 0; i<= Questions.length; i++) {
-	    	result.append((i+1)+") " + Questions[0]+"\t"+ch+") "+Answers[0].getText()+ NEW_LINE);
+	    for (int i = 0; i<= matchingItems.size(); i++) {
+	    	result.append((i+1)+") " + matchingItems.get(i)+"\t"+ch+") "+answers.get(i).getText()+ NEW_LINE);
 	    	ch++;
 	    }
 	    
