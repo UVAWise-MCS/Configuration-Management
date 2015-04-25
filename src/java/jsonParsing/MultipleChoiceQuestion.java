@@ -29,15 +29,15 @@ public class MultipleChoiceQuestion extends BaseQuestion
 	//********************************************************
 	@Override
 	public String toString() {
-		
+		char ch = 'A';
 		StringBuilder result = new StringBuilder();
 	    String NEW_LINE = System.getProperty("line.separator");
 	    result.append("Mulitple Choice Question :" + this.getCategory() + NEW_LINE);
 	    result.append(this.getText() + " ?" + NEW_LINE);
-	    result.append("A) " + Answers[0].getText() + NEW_LINE);
-	    result.append("B) " + Answers[1].getText() + NEW_LINE);
-	    result.append("C) " + Answers[2].getText() + NEW_LINE );
-	    result.append("D) " + Answers[3].getText() + NEW_LINE);
+	    for(Answer a: Answers){
+	    	result.append(ch+") " + a.getText() + NEW_LINE);
+	    	ch++;
+	    }
 	    return result.toString();
 	  }
 	

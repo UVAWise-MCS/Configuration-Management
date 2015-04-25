@@ -4,7 +4,7 @@ public class MatchingQuestion extends BaseQuestion
 {
 	//Using the Question class an array of questions is added as a private member variable 
 	//of the Matching questions class.
-	protected Question Questions[] = new Question[4];
+	protected String Questions[];
 
 	
 	public MatchingQuestion()				//Default constructor.
@@ -27,14 +27,14 @@ public class MatchingQuestion extends BaseQuestion
 	//***********************************************
 	@Override
 	public String toString() {
-		
+		char ch = 'A';
 		StringBuilder result = new StringBuilder();
 	    String NEW_LINE = System.getProperty("line.separator");
 	    result.append("Matching Question :" + this.getCategory() + NEW_LINE);
-	    result.append("1) " + Questions[0].getQuestion()+"\t"+"A) "+Answers[0].getText()+ NEW_LINE);
-	    result.append("2) " + Questions[1].getQuestion()+"\t"+"B) "+Answers[1].getText()+ NEW_LINE);
-	    result.append("3) " + Questions[2].getQuestion()+"\t"+"C) "+Answers[2].getText()+ NEW_LINE);
-	    result.append("4) " + Questions[3].getQuestion()+"\t"+"D) "+Answers[3].getText()+ NEW_LINE);
+	    for (int i = 0; i<= Questions.length; i++) {
+	    	result.append((i+1)+") " + Questions[0]+"\t"+ch+") "+Answers[0].getText()+ NEW_LINE);
+	    	ch++;
+	    }
 	    
 	    return result.toString();
 	}
