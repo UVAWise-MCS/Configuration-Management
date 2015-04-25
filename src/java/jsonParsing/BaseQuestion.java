@@ -59,12 +59,12 @@ public abstract class BaseQuestion
 		category = Category;
 	}
 	
-	protected void addAnswers(Answer ans)
+	public void addAnswer(Answer ans)
 	{
 		answers.add(ans);
 	}
 	
-	protected void addAnswers(String text, int val)
+	public void addAnswer(String text, int val)
 	{
 		Answer ans = new Answer();
 		ans.setText(text);
@@ -72,10 +72,6 @@ public abstract class BaseQuestion
 		answers.add(ans);
 	}
 		
-	public String toString() 
-	{
-		String result = "";
-		return result;
-	}
+	public abstract String toString();
 	
 }
