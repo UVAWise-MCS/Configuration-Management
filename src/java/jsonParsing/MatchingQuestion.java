@@ -20,6 +20,14 @@ public class MatchingQuestion extends BaseQuestion
 		super(question, 2, cat);
 	}
 	
+	public ArrayList<String> getMatchingItems() {
+		return matchingItems;
+	}
+
+	public void setMatchingItems(ArrayList<String> matchingItems) {
+		this.matchingItems = matchingItems;
+	}
+
 	public void addMatchingItem(String item){
 		matchingItems.add(item);
 	}
