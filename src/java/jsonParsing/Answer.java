@@ -1,6 +1,6 @@
 package jsonParsing;
 
-class Answer 
+public class Answer 
 {
 	private String text;  					//String Variable to contain the Question
 	private int value;						//Integer variable to contain the value of a question
@@ -35,6 +35,12 @@ class Answer
 	public void setValue(int Value)			//Utility function
 	{
 		value = Value;
+	}
+	
+	@Override
+	public String toString(){
+		return getText();
+		
 	}
 
 
