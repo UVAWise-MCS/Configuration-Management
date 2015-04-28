@@ -1,0 +1,28 @@
+{  
+   "attributes":[  
+      {  
+         "name":"MultipleChoice",
+         "numberOfUses":2
+      },
+      {  
+         "name":"TrueFalse",
+         "numberOfUses":2
+      },
+      {  
+         "name":"Matching",
+         "numberOfUses":2
+      },
+      {  
+         "name":"ShortAnswer",
+         "numberOfUses":2
+      },
+      {  
+         "name":"SWEG",
+         "numberOfUses":2
+      },
+      {  
+         "name":"general",
+         "numberOfUses":2
+      }
+   ]
+}
