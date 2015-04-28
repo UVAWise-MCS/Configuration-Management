@@ -74,7 +74,21 @@ public class Exam {
 	 */
 	public void setQuestions(ArrayList<BaseQuestion> questions) {
 		this.questions = questions;
-	}	
+	}
+
+
+	@Override
+	public String toString() {
+		StringBuilder result = new StringBuilder();
+	    String NEW_LINE = System.getProperty("line.separator");
+	    for(BaseQuestion q: questions){
+	    	result.append(q + NEW_LINE);
+	    }
+		
+		return result.toString();
+	}
+	
+	
 	
 	
 }
