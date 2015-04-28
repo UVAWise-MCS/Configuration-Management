@@ -8,6 +8,13 @@ import jsonParsing.MultipleChoiceQuestion;
 
 import org.junit.Test;
 
+/**
+ * 
+ * This is a unit test for the jsonParsing.MultipleChoiceQuestion class. Verifies expected output of the question.
+ * 
+ * @author Bryan Smith
+ * @date 4/25/15
+ */
 public class MultipleChoiceQuestionTest {
 
 	private String passing = "Mulitple Choice Question :General"

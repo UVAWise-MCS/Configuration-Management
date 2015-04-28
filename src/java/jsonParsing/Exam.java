@@ -11,68 +11,95 @@ import java.util.ArrayList;
  * @author Bryan Smith
  * @date 4/21/15
  */
-// TODO Update ClassDiagrams and SDD to show this new class.
-
 public class Exam {
-	// TODO Create a higher level class that contains all the questions and
-	// answers.
 
 	String name = "Exam";
 	ArrayList<BaseQuestion> questions = new ArrayList<BaseQuestion>();
 
-	public Exam() {
-	}
-
+	
+	/**
+	 * Exam constructor
+	 */
+	public Exam() {}
+	
+	/**
+	 * Exam constructor
+	 * @param name The name of the exam.
+	 */
 	public Exam(String name) {
 		setName(name);
 	}
 
+	
+	/**
+	 * Exam constructor
+	 * @param name The name of the exam.
+	 * @param questions A list of questions for the exam.
+	 */
 	public Exam(String name, ArrayList<BaseQuestion> questions) {
 		this(name);
 		setQuestions(questions);
 	}
 
+	
+	
+	/**
+	 * Add a question to the exam.
+	 * @param q The question to add to the exam.
+	 */
 	public void addQuestion(BaseQuestion q) {
 		getQuestions().add(q);
 	}
 
+	
 	/**
-	 * @return the name
+	 * Get the name of the Exam.
+	 * @return the name of the exam.
 	 */
 	public String getName() {
 		return name;
 	}
 
+	
 	/**
-	 * @return the questions
+	 * Get a list of the questions in the exam.
+	 * @return the list of questions
 	 */
 	public ArrayList<BaseQuestion> getQuestions() {
 		return questions;
 	}
 
+	
 	/**
-	 * @return the totalQuestions
+	 * Get the total number of questions the exam has.
+	 * @return the total number of questions the exam has.
 	 */
 	public int getTotalQuestions() {
 		return getQuestions().size();
 	}
 
+	
 	/**
-	 * @param name
-	 *            the name to set
+	 * Set the name of the Exam.
+	 * @param name The name to set for the exam.
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	
 	/**
-	 * @param questions2
-	 *            the questions to set
+	 * Set a group of questions for the exam.
+	 * @param questions The questions to set for the exam.
 	 */
 	public void setQuestions(ArrayList<BaseQuestion> questions) {
 		this.questions = questions;
 	}
 
+	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		StringBuilder result = new StringBuilder();

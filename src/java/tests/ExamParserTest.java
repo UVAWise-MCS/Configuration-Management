@@ -10,7 +10,7 @@ import org.junit.Test;
 
 /**
  * 
- * This is a unit test for the jsonParsing.ExamParser class.
+ * This is a unit test for the jsonParsing.ExamParser class. Verifies expected output.
  * 
  * @author Bryan Smith
  * @date 4/16/15

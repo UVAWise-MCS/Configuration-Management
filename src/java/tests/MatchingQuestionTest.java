@@ -5,6 +5,13 @@ import jsonParsing.MatchingQuestion;
 
 import org.junit.Test;
 
+/**
+ * 
+ * This is a unit test for the jsonParsing.MatchingQuestion class. Verifies expected output of the question.
+ * 
+ * @author Bryan Smith
+ * @date 4/25/15
+ */
 public class MatchingQuestionTest {
 
 	private String passing = "Matching Question :Geography"

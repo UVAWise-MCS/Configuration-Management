@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package tests;
 
 import static org.junit.Assert.fail;
@@ -8,6 +6,13 @@ import jsonParsing.TrueFalseQuestion;
 
 import org.junit.Test;
 
+/**
+ * 
+ * This is a unit test for the jsonParsing.TrueFalseQuestion class. Verifies expected output of the question.
+ * 
+ * @author Bryan Smith
+ * @date 4/25/15
+ */
 public class TrueFalseQuestionTest {
 
 	private String passing = "True/False Question : Weather"
