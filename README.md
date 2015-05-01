@@ -58,3 +58,22 @@ Each team member will perform a self-assessment of how they did on the project a
  * Recommended Score (0-100)
  
 Each person will turn in their assessments separately from the documentation listed previously. Give specific examples and write at least 2 paragraphs for each item (responsibilities, strengths, weaknesses). 
+
+***
+
+##How to import into Eclipse:
+  1. File
+  2. Import
+  3. Git
+  4. Projects From Git
+  5. Clone URI
+  6. Use https://github.com/UVAWise-MCS/Configuration-Management.git as the URI
+  7. Enter in your GitHub login information.
+  8. Select at least the master branch
+  9. Initial Branch as master
+  10. Import Existing Projects
+  11. Next until Finished
+
+##How to run: 
+ * Open command prompt, point to JAR file using java. E.G. ```java -jar ExamGenerator.jar```
+ * ```java -jar ExamGenerator.jar load <question JSON data file> <attributes JSON data file>```

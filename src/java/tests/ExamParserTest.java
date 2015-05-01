@@ -33,6 +33,7 @@ public class ExamParserTest {
 		String json = "{'name':'Exam','questions':[{'text':'What is SWEG?','category':'SWEG','answers':['Comp Sci','Software Engineering','Derp','Herp'],'type':0},{'text':'What is SWEG?','category':'SWEG','answers':['Comp Sci','Software Engineering','Derp','Herp'],'type':0},{'text':'Match each capital with its country','category':'Geography','matchingItems':['Paris','Milan','London','Berlin'],'answers':['England','France','Germany','Italy'],'type':2},{'text':'Is it Raining?','category':'Weather','answers':['True','False'],'type':1},{'text':'Are you awake?','category':'General','answers':[],'type':3}]}";
 		String attJson = "{'attributes':[{'name':'MultipleChoice','numberOfUses':2},{'name':'SWEG','numberOfUses':1},{'name':'Geography','numberOfUses':2},{'name':'Weather','numberOfUses':1},{'name':'General','numberOfUses':2},{'name':'truefalse','numberOfUses':1}]}";
 
+		//Test with valid data
 		try {
 
 			ExamParser parser = new ExamParser(json, attJson);
@@ -52,6 +53,14 @@ public class ExamParserTest {
 			System.out.println(e);
 			fail(e.getMessage());
 		}
+		
+		//Test with invalid, blank  data
+		try {
+			ExamParser parser = new ExamParser("", "");
+			parser.parse().toString();
+			fail();
+		} catch (Exception e) {	}
+		
 	}
 
 }

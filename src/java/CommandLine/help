@@ -1,0 +1,18 @@
+Exam Generator
+-------------------------
+This program generates an exam based on provided JSON files which imports the questions and 
+determines which and how to display them.
+
+Commands:
+---------
+* load - Loads the JSON files and then generates the exam. 
+     Usage: 
+     load <questions JSON file path> <attributes JSON file path> <output file path>
+
+* help - Show this help file.
+* exit - Close the application.
+
+Notes:
+------
+* Make sure if your file path has spaces to put the file path in double quotes. 
+  For example "C:\New Folder\data.json"

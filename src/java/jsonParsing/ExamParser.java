@@ -135,11 +135,10 @@ public class ExamParser {
 				}
 			}
 			return genereatedExam;
-		} catch (JSONException e) {
+		} catch (JSONException|NullPointerException e) {
 			System.out.print(ERROR_PARSE_EXAM + e.getMessage() + "\n");
+			return null;
 		}
-		return null; // TODO Implement
-
 	}
 
 	
