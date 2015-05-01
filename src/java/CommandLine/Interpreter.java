@@ -132,12 +132,12 @@ public class Interpreter{
 			out.print(generateExam(questionJson,attributeJson));
 			out.close();
 			System.out.println("Exam saved to: "+saveLoc);
-		} catch (FileNotFoundException e) {
+		} catch (FileNotFoundException|NullPointerException e) {
 			System.out.println(ERROR_FILE_NOT_FOUND+" - "+e.getMessage());
 		}
 	}
 
-	private String generateExam(String questionJson, String attributeJson) {
+	private String generateExam(String questionJson, String attributeJson) throws NullPointerException {
 		ExamParser parser = new ExamParser(questionJson, attributeJson);
 		return parser.parse().toString();
 	}
