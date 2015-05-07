@@ -101,6 +101,7 @@ public class Interpreter{
 		Date date= new java.util.Date();
 		String fileEnd = File.separator+"output-"+date.getTime()+".txt";
 		if (saveLoc == null) saveLoc = Paths.get(".").toAbsolutePath().normalize().toString()+fileEnd;
+		File outPutFile = new File(saveLoc);
 		
 		for(int i=0; i<2;i++){
 			FileReader file = null;
@@ -128,10 +129,13 @@ public class Interpreter{
 		}
 		
 		try {
-			PrintWriter out = new PrintWriter(saveLoc);
+			File output = new File(outPutFile.getParent()+File.separator+
+					outPutFile.getName().replaceAll("[^a-zA-Z0-9.-]", "_"));
+			
+			PrintWriter out = new PrintWriter(output.getPath());
 			out.print(generateExam(questionJson,attributeJson));
 			out.close();
-			System.out.println("Exam saved to: "+saveLoc);
+			System.out.println("Exam saved to: "+output.getPath());
 		} catch (FileNotFoundException|NullPointerException e) {
 			System.out.println(ERROR_FILE_NOT_FOUND+" - "+e.getMessage());
 		}

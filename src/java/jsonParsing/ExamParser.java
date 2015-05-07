@@ -90,11 +90,11 @@ public class ExamParser {
 	 * @param arr The JSONAray to convert to a list.
 	 * @return The list that has been converted from a JSONAray
 	 */
-	private <T> ArrayList<T> convertJSONArrayToList(JSONArray arr) {
+	private ArrayList<String> convertJSONArrayToList(JSONArray arr) {
 		try {
-			ArrayList<T> list = new ArrayList<T>();
+			ArrayList<String> list = new ArrayList<String>();
 			for (int i = 0; i < arr.length(); i++) {
-				list.add((T) arr.get(i));
+				list.add((String) arr.get(i));
 			}
 			return list;
 		} catch (Exception e) {
