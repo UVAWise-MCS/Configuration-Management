@@ -1,0 +1,258 @@
+Project:  Configuration-Management
+
+Log Date Range:
+     01-20-15  05-07-15  (106 days)
+
+ ** Dates without changes are ommitted. **
+============================================
+
+====================
+     05-07-2015
+====================
+ Merge pull request #13 from UVAWise-MCS/Bryan || Bryan Smith
+ Merge branch 'Bryan' of https://github.com/UVAWise-MCS/Configuration-Management.git into Bryan || Bryan Smith
+ Merge branch 'Bryan' of https://github.com/UVAWise-MCS/Configuration-Management into Bryan || Bryan Smith
+ SRS: Change req 4.1.3 to allow user to specify input data loc || Bryan Smith
+ Update pre-compiled JAR file to latest version. || Bryan Smith
+ Better handle the output filename cleaning. || Bryan Smith
+ Revert "Small warning fixes" || Bryan Smith
+ Small warning fixes || Bryan Smith
+ No need to use template on ConvertJSONArray method. || Bryan Smith
+ STP: Add sections 8-11 and final changes. || Bryan Smith
+ Merge branch 'Bryan' of https://github.com/UVAWise-MCS/Configuration-Management into Bryan || Bryan Smith
+ Merge branch 'scott' of https://github.com/UVAWise-MCS/Configuration-Management into Bryan || Bryan Smith
+ Software Test Plan Update || Scott Arnette
+ Interpreter: Clean the output file location if there are invalid chars || Bryan Smith
+ Merge pull request #12 from UVAWise-MCS/scott || Joseph LaCava
+
+
+
+====================
+     05-04-2015
+====================
+ Added SoftwareTestPlan || Scott Arnette
+
+
+
+====================
+     05-01-2015
+====================
+ Update documentation to show Command Line changes || Bryan Smith
+ Merge pull request #10 from UVAWise-MCS/Bryan || Bryan Smith
+ Add how to import and how to run to the readme || Bryan Smith
+ Add compiled JAR file. || Bryan Smith
+ Fix some uncaught errors when blank data is attempted to be parsed || Bryan Smith
+ Update ExamParser unit test to test more inputs || Bryan Smith
+ Add Interpreter unit test || Bryan Smith
+ Add Command Interpreter implementation. || Joseph LaCava
+ Merge remote-tracking branch 'origin/Joseph' into Bryan || Bryan Smith
+
+
+
+====================
+     04-29-2015
+====================
+ Added modified yet incomplete files || Joseph LaCava
+ Added modified yet incomplete files || Joseph LaCava
+
+
+
+====================
+     04-28-2015
+====================
+ Merge pull request #9 from UVAWise-MCS/Bryan || Bryan Smith
+ Update SRS and SDD PDFs as well. || Bryan Smith
+ Update the SDD and related diagrams to show new JSON parsing changes. || Bryan Smith
+ Comments and cleanup || Bryan Smith
+ Implement the ExamParser Unit test. || Bryan Smith
+ Automated cleanup and refactoring. || Bryan Smith
+ Add a sample Exam Attribute JSON file. || Bryan Smith
+ Finish implementing the Exam JSON Parser || Bryan Smith
+ Add toString method to Exam class. This allows it to be printed easy. || Bryan Smith
+
+
+
+====================
+     04-25-2015
+====================
+ Add a sample JSON file for questions. || Bryan Smith
+ Remove Answer Class and modify the Questions to simply use strings. || Bryan Smith
+ Clean Up: Remove Unused imports, reorganize members, etc. || Bryan Smith
+ Streamline True and False by reusing Multiple Choice Question Class. || Bryan Smith
+ Handle way of getting total exam questions better. || Bryan Smith
+ Add public getters and setter for some Question classes. || Bryan Smith
+ Switch Exam Class over to ArrayLists and add getters for questions. || Bryan Smith
+ Replace JSON library with a slightly older version for compatibility. || Bryan Smith
+ Public accessor methods || Bryan Smith
+ Clean up question output and use Answer's toString method. || Bryan Smith
+ Add Question data structure test classes. || Bryan Smith
+ Add toString method to Answer class. || Bryan Smith
+ Make the abstract BaseQuestion's toString method abstract as well. || Bryan Smith
+ Clean up and auto declare question type based on derived class. || Bryan Smith
+ Switch to dynamic arrays (ArrayLists) || Bryan Smith
+ Remove example use of BaseQuestion. May be moved to a test class. || Bryan Smith
+ Slim down Questions toString and better support unknown number of answers. || Bryan Smith
+ Add Question and Answer Data structures || Derek Ouzia
+
+
+
+====================
+     04-23-2015
+====================
+ Flesh out the Exam class more. || Bryan Smith
+
+
+
+====================
+     04-21-2015
+====================
+ Merge branch 'Joseph' of https://github.com/UVAWise-MCS/Configuration-Management into Joseph || Joseph LaCava
+ Merge remote-tracking branch 'origin/Bryan' into Joseph || Joseph LaCava
+ Add Use Case Diagram || Derek Ouzia
+ Add Sequence Diagram || Derek Ouzia
+ Add Data Flow Diagram || Derek Ouzia
+ Add placeholers for sample JSON data || Bryan Smith
+ Remove Final Report and Presentation Section || Bryan Smith
+ Remove log file. Commit history serves this purpose || Bryan Smith
+ Fix derps || Bryan Smith
+
+
+
+====================
+     04-20-2015
+====================
+ Add in some TODOs || Bryan Smith
+ Move Joe's Command Line class to the corresponding package. || Bryan Smith
+ Merge remote-tracking branch 'origin/Joseph' into Bryan || Bryan Smith
+ Rename packages to follow convention. || Bryan Smith
+ Add initial ExamParser Unit Test || Bryan Smith
+ Check into source log || Bryan Smith
+ Remove placeholders || Bryan Smith
+ Rename XML folder to JSON || Bryan Smith
+ Add JUnit to the project || Bryan Smith
+ Add start of JSONParsing classes || Bryan Smith
+ Setup initial Eclipse project || Bryan Smith
+
+
+
+====================
+     04-16-2015
+====================
+ Merge branch 'Joseph' of https://github.com/UVAWise-MCS/Configuration-Management into Joseph || Joseph LaCava
+ Added cmd.java || Joseph LaCava
+
+
+
+====================
+     03-28-2015
+====================
+ Merge pull request #8 from UVAWise-MCS/Bryan || Bryan Smith
+ Utils: Changelog Generator enhancements || Bryan Smith
+
+
+
+====================
+     03-26-2015
+====================
+ Update README.md || Bryan Smith
+ Update README.md || Bryan Smith
+
+
+
+====================
+     03-20-2015
+====================
+ Merge pull request #7 from UVAWise-MCS/Bryan || Bryan Smith
+ SSD: Update section 3.3 || Bryan Smith
+ Revert "SDD Template" || Bryan Smith
+ SDD: Finish up the design document. || Bryan Smith
+
+
+
+====================
+     03-19-2015
+====================
+ SDD: Class diagram complete. || Bryan Smith
+ Merge remote-tracking branch 'UVAWise-MCS/Joseph' into Bryan || Bryan Smith
+ Merge remote-tracking branch 'UVAWise-MCS/Scott' into Bryan || Bryan Smith
+ Added Class Diagram || Joseph LaCava
+ Create Initial SDD || Scott Arnette
+ Merge pull request #6 from UVAWise-MCS/master || Joseph LaCava
+
+
+
+====================
+     03-18-2015
+====================
+ SDD: Parsing related classes added to Class Diagram. || Bryan Smith
+
+
+
+====================
+     03-16-2015
+====================
+ Merge pull request #3 from UVAWise-MCS/Bryan || Bryan Smith
+ SRS: Update based on feedback and remove GUI reqs || Bryan Smith
+ Merge branch 'master' into Bryan || Bryan Smith
+ Merge pull request #2 from UVAWise-MCS/Joseph || Bryan Smith
+ SDD Template || Joseph LaCava
+ Merge branch 'master' of https://github.com/UVAWise-MCS/Configuration-Management into Joseph || Joseph LaCava
+
+
+
+====================
+     02-28-2015
+====================
+ Utils: Add Git Changelog Generator Script || Bryan Smith
+
+
+
+====================
+     02-13-2015
+====================
+ Merge pull request #1 from UVAWise-MCS/Bryan || Bryan Smith
+
+
+
+====================
+     02-12-2015
+====================
+ SRS: Finish off the rest of the sections. || Bryan Smith
+ SRS: Slight format changes. || Bryan Smith
+ Updated SRS || Scott Arnette
+
+
+
+====================
+     02-11-2015
+====================
+ Update SRS - Initial fleshing out. || Bryan Smith
+
+
+
+====================
+     02-10-2015
+====================
+ Add system overview diagram. || Bryan Smith
+ Add the initial SRS Document ready for Requirements || Bryan Smith
+ Add .gitignore for Word temp file pattern || Bryan Smith
+
+
+
+====================
+     02-03-2015
+====================
+ pleasing formatting || Joseph LaCava
+ added placeholder || Joseph LaCava
+ added src and Diagram folders || Joseph LaCava
+ Added Project Desciption || Joseph LaCava
+ added Documetation to date || Joseph LaCava
+
+
+
+====================
+     01-27-2015
+====================
+ Initial commit || Joseph LaCava
+
+
