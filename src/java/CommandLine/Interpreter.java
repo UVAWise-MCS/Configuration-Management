@@ -128,6 +128,7 @@ public class Interpreter{
 		}
 		
 		try {
+			saveLoc = saveLoc.replaceAll("[^a-zA-Z0-9.-]", "_");
 			PrintWriter out = new PrintWriter(saveLoc);
 			out.print(generateExam(questionJson,attributeJson));
 			out.close();
