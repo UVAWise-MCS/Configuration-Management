@@ -5,6 +5,10 @@ package tests;
 
 import static org.junit.Assert.fail;
 
+import java.io.InputStream;
+
+import jsonParsing.ExamParser;
+
 import org.junit.Test;
 
 import CommandLine.Interpreter;

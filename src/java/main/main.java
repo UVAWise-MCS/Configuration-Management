@@ -9,7 +9,7 @@ package main;
 import CommandLine.Interpreter;
 
 public class main{
-	public main(String args[]){
+	public static void main(String args[]){
 		new Interpreter(args);
 	}
 }
